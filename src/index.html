@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Front app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-
     <header>
       <div class="boxTitle">
         <h2 class="titleHeader">Title</h2>
       </div>
-      <img src="./image/vehiculos.jpg" alt="Vehicles">
+      <picture>
+        <source srcset="./image/vehiculos.webp" type="image/webp" />
+        <img src="./image/vehiculos.jpg" alt="Vehicles" />
+      </picture>
+
       <nav>
         <a href="/">Home</a>
         <a href="./pages/cars.html">Cars</a>
@@ -21,17 +24,7 @@
       </nav>
     </header>
 
-    <h1>My Front-End App</h1>  
-
-
-
-
-
-
-
-
-
-
+    <h1>My Front-End App</h1>
 
     <script src="./app.js"></script>
   </body>
