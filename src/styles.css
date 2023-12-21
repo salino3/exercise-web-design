@@ -1,23 +1,52 @@
-body {
-    background: #2c3e50;
-    color: #2d77a7;
+
+:root {
+  --main-background: #2c3e50;
+  --secondary-background: #bcc3c8;
+  --text-color: #2d77a7;
 }
 
+body {
+  background-color: var(--main-background);
+  color: var(--text-color);
+}
+
+
+
 header {
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;   
+    gap: 200px;   
+    border: groove 4px var(--text-color);
+    background: var(--text-color);
+    padding: 10px;
+
+}
+
+.containerLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.boxTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .titleHeader {
-    padding: 10px;
-    background: #bcc3c8; 
+
+    padding: 5px;
+    background: var(--secondary-background); 
 }
 
 .boxPhotoHeader {
-    padding: 20px;
-    background: #bcc3c8;
+    padding: 10px;
+    background: var(--secondary-background); 
     min-height: 100%;
     max-width: min-content;
     display: flex;
@@ -26,15 +55,91 @@ header {
 }
 
 .boxPhotoHeader img {
-    width: 180px;
+    width: 175px;
     height: auto; 
     display: block; 
 }
 
-
 .pageTitle {
     padding: 10px;
-    background: #bcc3c8;  
+    background: var(--secondary-background); 
     min-width: 270px;
     width: min-content;
+}
+
+/*  */
+
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--secondary-background); 
+  padding: 1px 3px;
+}
+
+.navHeader a {
+    color: #2d77a7;
+    padding: 7px;
+}
+
+.navHeader a:hover {
+    background: var(--main-background);
+}
+
+.navHeader a:active {
+    color: yellow;
+}
+
+
+#form-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;   
+    border: solid black 1px;
+    padding: 10px;
+    width:  250px;
+    background: var(--main-background);
+
+}
+
+.form-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+}
+
+.form-group-1 label {
+    background: var(--secondary-background); 
+    width: min-content;
+    padding: 2px 3px 1px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.searchingInput {
+    border-radius: 5px;
+    padding: 2px;
+    width: 200px;
+}
+
+.searchingInput::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+    font-weight: 550;
+}
+
+.searchingInput:focus {
+    color: var(--text-color);
+    font-weight: 550;
+}
+
+.btn-1 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: coursive;
+    cursor: pointer;
 }

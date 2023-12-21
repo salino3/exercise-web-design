@@ -8,27 +8,34 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <div class="boxTitle">
-        <h2 class="titleHeader">Title</h2>
+    <header id="header">
+      <div class="containerLeft">
+        <div class="boxTitle">
+          <h2 class="titleHeader">Title</h2>
+        </div>
+        <div class="boxPhotoHeader">
+          <picture>
+            <source
+              srcset="./image/vehiculos.webp"
+              type="image/webp"
+              loading="lazy"
+            />
+            <img loading="lazy" src="./image/vehiculos.jpg" alt="Vehicles" />
+          </picture>
+        </div>
       </div>
-      <div class="boxPhotoHeader">
-
-        <picture>
-          <source srcset="./image/vehiculos.webp" type="image/webp" loading="lazy" />
-          <img  loading="lazy" src="./image/vehiculos.jpg" alt="Vehicles" />
-        </picture>
-      </div>
-
-      <nav>
+      <!--  -->
+      <nav class="navHeader">
         <a href="/">Home</a>
+        <span>|</span>
         <a href="./pages/cars.html">Cars</a>
-        <a href="./pages/motorcycles.html">motorcycles</a>
+        <span>|</span>
+        <a href="./pages/motorcycles.html">Motorcycles</a>
       </nav>
     </header>
 
     <h1 class="pageTitle">My Front-End App</h1>
 
-    <script src="./app.js"></script>
+    <script  type="module" defer src="./app.js"></script>
   </body>
 </html>
