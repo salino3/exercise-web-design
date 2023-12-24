@@ -143,3 +143,49 @@ header {
     font-family: coursive;
     cursor: pointer;
 }
+
+/* main */
+
+.asideIndex {
+    background: var(--text-color);
+    width: 220px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.asideIndex h3 {
+    background: var(--secondary-background);
+    display: inline;
+    width: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listAside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    color: var(--secondary-background);
+    background: var(--main-background);
+    width: min-content;
+    padding: 20px 35px; 
+    margin: 0;
+    margin-left: 20px;
+    
+}
+
+.liAside span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    white-space: nowrap;
+}

@@ -1,6 +1,7 @@
 import * as FormField from './js/classes/form-field.js';
 import * as Button from './js/classes/button.js';
 import * as Form from './js/classes/form.js';
+import {vehicles} from './api-mock/mock-data.js';
 
 
 console.log("Running front app");
@@ -18,3 +19,4 @@ formHeader.appendChild(FormField.headerField.render());
 
 
 formHeader.appendChild(Button.headerBtn.render());
+
