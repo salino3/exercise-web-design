@@ -249,6 +249,8 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
+    border-radius: 5px;
+
     border: solid;
     padding: 20px;
     background: var(--secondary-background); 
@@ -256,7 +258,6 @@ header {
 }
 
 .contentLong {
-    border: solid;
     padding: 20px;
     width: 750px;
     height: 200px;
@@ -266,7 +267,6 @@ header {
 }
 
 .contentShort {
-    border: solid;
     padding: 20px;
     width: 180px;
     background: var(--main-background); 
