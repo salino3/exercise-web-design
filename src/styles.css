@@ -8,6 +8,8 @@
 body {
   background-color: var(--main-background);
   color: var(--text-color);
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -60,12 +62,6 @@ header {
     display: block; 
 }
 
-.pageTitle {
-    padding: 10px;
-    background: var(--secondary-background); 
-    min-width: 270px;
-    width: min-content;
-}
 
 /*  */
 
@@ -146,6 +142,13 @@ header {
 
 /* main */
 
+.mainIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
 .asideIndex {
     background: var(--text-color);
     width: 220px;
@@ -189,3 +192,89 @@ header {
     color: var(--text-color);
     white-space: nowrap;
 }
+
+.liAside:hover, .liAside a:hover {
+ color: var(--secondary-background);
+ opacity: 0.9;
+}
+
+.bodyIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    border: solid;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: box-border;
+    padding-bottom: 100px;
+}
+
+.pageTitle {
+    display: flex;
+    position: relative;
+    justify-self: flex-start;  
+    padding: 10px;
+    background: var(--secondary-background); 
+    min-width: 270px;
+    width: min-content;
+
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+
+}
+
+.bodyTitle {
+    display: flex;
+    justify-self: center;  
+    padding: 10px;
+    background: var(--secondary-background); 
+}
+
+.containerSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bodyIndex section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border: solid;
+    padding: 20px;
+    background: var(--secondary-background); 
+
+}
+
+.contentLong {
+    border: solid;
+    padding: 20px;
+    width: 750px;
+    height: 200px;
+    background: var(--main-background); 
+
+
+}
+
+.contentShort {
+    border: solid;
+    padding: 20px;
+    width: 180px;
+    background: var(--main-background); 
+
+}
+
+
+
+
+
+
