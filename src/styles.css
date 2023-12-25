@@ -316,6 +316,11 @@ header {
     box-sizing: border-box;
 }
 
+/*  */
+
+.list-3 li a {
+    color: var(--text-color);
+}
 
 
 
